@@ -1,0 +1,127 @@
+/* this style is for all sections */
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+#topnav{
+  width: 100%;
+  height: 40px;
+  background: #e6e6e6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#topnav img{
+  width: 80px;
+  height: 35px;
+  border-radius: 3px;
+  
+}
+/* this is sidebar section */
+#sidebar{
+  position: fixed;
+  width: 20em;
+  height: 100vh;
+  background: #cccccc;
+  padding: 20px;
+  border-radius: 3pxx;
+
+}
+h2{
+  text-align: center;
+  background: gold;
+  padding: 10px;
+  border: 3px dotted orange;
+  border-radius: 10px;
+
+}
+#sidebar ul h3{
+  padding: 10px 3px;
+  background: orange;
+  border-radius: 3px;
+  margin: 10px 0;
+  cursor: pointer;
+  
+}
+#sidebar ul a{
+  color: purple;
+
+}
+#sidebar .fa-angle-down{
+  color: purple;
+  font-size: 30px;
+}
+
+#sidebar h3:hover{
+  background: #ff6666;
+  transition: 1s;
+  border-radius: 3px;
+  
+}
+/* ----------------------------------------- */
+
+/* this is main body section */
+#main_body h1{
+  text-align: center;
+  color: orange;
+  border-bottom: 2px solid orange;
+
+}
+#main_body{
+  position: fixed;
+  left: 21em;
+  top: 3em;
+  background: #e6e6e6;
+  width: 80%;
+  height: 100vh;
+  border-radius: 2px;
+/*  opacity: 1;
+  background-image: url("photo/et.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.paragraph{
+  padding: 5px 10px;
+  
+}
+.paragraph p{
+  font-size: 20px;
+  color: black;
+}
+/* this is footer section */
+#copyright{
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 5px 0;
+
+}
+
+/* ----------------------------------------- */
+/* this is mediaquery section */
+@media screen and (max-width: 600px) {
+    #sidebar{
+      width: 100%;
+      overflow: auto;
+      padding: 5em 0;
+
+    }
+    #sidebar ul h3{
+      padding-left: 20px;
+      font-size: 2em;
+    }
+    #topnav{
+      padding: 40px 0;
+      float: none;
+    }
+    
+  }
+  
